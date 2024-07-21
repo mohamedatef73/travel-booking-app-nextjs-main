@@ -1,8 +1,10 @@
-import React from "react"
+// import React from "react"
 import { useState } from "react"
 
-const Home = () => {
+const Home: React.FC = () => {
   const [toggle, setToggle] = useState(false)
+
+  console.log("home page")
 
   return (
     <div

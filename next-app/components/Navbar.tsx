@@ -1,11 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
-import { NAV_LINKS } from "@/constants"
+import { NAV_LINKS } from "../constants"
 import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween  max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween  max-container padding-container  z-30 py-5">
       <Link href="/">
         <Image src="/ccg.png" alt="logo" width={200} height={29} />
       </Link>

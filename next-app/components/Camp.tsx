@@ -3,7 +3,7 @@ import Head from "next/head"
 // import Image from "next/image"
 import Carousel from "./Carousel"
 
-import { PEOPLE_URL } from "@/constants"
+import { PEOPLE_URL } from "../constants/index"
 import Image from "next/image"
 
 interface CampProps {
