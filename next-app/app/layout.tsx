@@ -16,15 +16,9 @@ import Head from "next/head"
 // }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname()
-  const router = useRouter()
-
-  const handleNavigation = (path: Url) => {
-    router.push(path)
-  }
   return (
     <div>
-      <Navbar onNavigate={handleNavigation} currentPath={pathname} />
+      <Navbar />
       <main className="relative overflow-hidden">{children}</main>
       <Footer />
     </div>
