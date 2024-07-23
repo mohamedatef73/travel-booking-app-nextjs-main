@@ -23,12 +23,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     router.push(path)
   }
   return (
-    <html lang="en">
-      <body>
-        <Navbar onNavigate={handleNavigation} currentPath={pathname} />
-        <main className="relative overflow-hidden">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <div>
+      <Navbar onNavigate={handleNavigation} currentPath={pathname} />
+      <main className="relative overflow-hidden">{children}</main>
+      <Footer />
+    </div>
   )
 }

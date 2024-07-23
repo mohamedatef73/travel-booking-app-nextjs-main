@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        "extra-loose": "25",
+        "super-tight": "1.2",
+      },
       colors: {
         green: {
           50: "#30AF5B",
