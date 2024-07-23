@@ -1,10 +1,12 @@
 // import React from 'react';
 
+import RootLayout from "../app/layout"
+
 const Porcelain: React.FC = () => {
   return (
-    <div>
+    <RootLayout>
       <h1>Hello, Next.js!</h1>
-    </div>
+    </RootLayout>
   )
 }
 

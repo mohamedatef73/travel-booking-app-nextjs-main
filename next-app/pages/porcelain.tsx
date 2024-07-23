@@ -6,9 +6,10 @@ import "../app/globals.css"
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import RootLayout from "../app/layout"
 
 const PokemonList = () => {
-  console.log("porcelain page here")
+  // console.log("porcelain page here")
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([])
 
   useEffect(() => {
@@ -22,18 +23,18 @@ const PokemonList = () => {
   }, [])
 
   return (
-    <div className="container mx-auto mt-8">
-      <Navbar />
-      <h2 className="text-2xl font-bold mb-4">Pokemon List</h2>
-      <ul className="grid grid-cols-2 gap-4">
-        {pokemonList.map((pokemon, index) => (
-          <li key={index} className="bg-gray-100 p-4 rounded-md shadow-md">
-            <span className="text-lg font-medium">{pokemon.name}</span>
-          </li>
-        ))}
-      </ul>
-      <Footer />
-    </div>
+    <RootLayout>
+      <div className="container mx-auto mt-8">
+        <h2 className="text-2xl font-bold mb-4">Pokemon List</h2>
+        <ul className="grid grid-cols-2 gap-4">
+          {pokemonList.map((pokemon, index) => (
+            <li key={index} className="bg-gray-100 p-4 rounded-md shadow-md">
+              <span className="text-lg font-medium">{pokemon.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </RootLayout>
   )
 }
 

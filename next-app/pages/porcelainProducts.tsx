@@ -1,5 +1,6 @@
 import React from "react"
 import PokemonList from "../components/PokemonList"
+import RootLayout from "../app/layout"
 
 const pokemonList = [
   { name: "bulbasaur" },
@@ -10,9 +11,9 @@ const pokemonList = [
 
 const HomePage = () => {
   return (
-    <div className="container mx-auto p-4">
+    <RootLayout>
       <PokemonList pokemonList={pokemonList} />
-    </div>
+    </RootLayout>
   )
 }
 
