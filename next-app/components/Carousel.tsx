@@ -3,23 +3,27 @@
 import React, { useState, useEffect } from "react"
 
 const Carousel: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0);
   const slides = [
     "/porcelain4.jpg",
     "/porcelain3.jpg",
     "/porcelain2.jpg",
     "/porcelain.jpg",
     "/five.jpg",
-  ]
+  ];
 
   const nextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1))
-  }
+    setActiveIndex((prevIndex) => {
+      return prevIndex === slides.length - 1 ? 0 : prevIndex + 1;
+    });
+  };
 
   const prevSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1))
-  }
-
+    setActiveIndex((prevIndex) => {
+      return prevIndex === 0 ? slides.length - 1 : prevIndex - 1;
+    });
+  };
+  
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide()
