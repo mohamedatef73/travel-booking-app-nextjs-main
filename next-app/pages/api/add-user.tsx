@@ -10,7 +10,7 @@
 
 //   const handleSubmit = async (e: React.FormEvent) => {
 //     e.preventDefault();
-//     const res = await fetch('app/api/users/create', {
+//     const res = await fetch('app/api/pages/users/create', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -205,8 +205,7 @@ const AddUser: React.FC = () => {
           id="email"
         />
       </div>
-      <button
-        type="submit"
+      <button type="submit"
         className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 transition-colors duration-300"
       >
         Submit
