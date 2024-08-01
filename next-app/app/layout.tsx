@@ -2,11 +2,15 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './globals.css' // Import your global CSS file if you have one
-
+import 'tailwindcss/tailwind.css';
+import 'flowbite/dist/flowbite.css';
 // export const metadata = {
 //   title: 'Ceramic Store',
 //   description: 'احدث منتجات وعروض شركة سيراميكا مايوركا',
 // }
+// pages/api/users/index.ts
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
